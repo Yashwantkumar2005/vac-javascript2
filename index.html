@@ -1,14 +1,16 @@
 <html>
 <body><h1>OUTPUT CONSOLE:</h1><h2><script>
-let r,s=[25],ev=[],od=[],no=[];
+let r,s=[25],ev=[],od=[],no=[],l,le;
 for(let i=0;i<25;i++){
 r=Number(prompt("Enter the Id of"+" "+(i+1)+" "+"student"));
 s[i]=r;
 }
 for(let w=1;w<=25;w++){
 if(w%2==0){
-ev.push(s[w]);}
-else{od.push(s[w]);}
+l=ev.length;
+ev[l]=s[w];}
+else{le=od.length;
+od[l]=s[w];}
 }no[0]=s[0];
 document.write("ORIGINAL ID'S:");
 document.write("<br>");
